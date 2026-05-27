@@ -19,6 +19,17 @@ section > ol > li + li {
 
 section > ol > li > a {
 	color: inherit;
+	text-decoration: none;
+}
+
+section > ol > li > a:hover {
+	text-decoration: underline;
+}
+
+section > ol > li > a > .publication {
+	margin-left: 0.4em;
+	color: #666;
+	font-size: 0.75rem;
 }
 
 section > ol > li > time {
