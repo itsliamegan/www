@@ -23,10 +23,11 @@ section > ul > li > span + span {
 
 section > ol > li {
 	display: flex;
+	flex-direction: column;
 }
 
 section > ol > li + li {
-	margin-top: 0.25em;
+	margin-top: 0.75em;
 }
 
 section > ol > li > a {
@@ -45,5 +46,23 @@ section > ol > li > a > .publication {
 }
 
 section > ol > li > time {
-	margin-left: auto;
+	font-size: 0.875rem;
+}
+
+@media screen and (min-width: 800px) {
+	section > ol > li {
+		flex-direction: row;
+	}
+
+	section > ol > li + li {
+		margin-top: 0.25em;
+	}
+
+	section > ol > li > time {
+		margin-left: auto;
+		font-size: 1rem;
+	}
+}
+
+@media screen and (min-width: 1200px) {
 }
