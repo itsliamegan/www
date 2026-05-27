@@ -9,6 +9,18 @@ section > header > h2 {
 	text-transform: uppercase;
 }
 
+section > ul {
+	list-style: none;
+}
+
+section > ul > li {
+	display: flex;
+}
+
+section > ul > li > span + span {
+	margin-left: auto;
+}
+
 section > ol > li {
 	display: flex;
 }
